@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav li {
+  margin-left: 20px;
+}
+
+header nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #c5c5c5;
+}
+
+header nav ul li:first-child {
+  margin-left: 0;
+  margin-right: auto;
+}
+header img {
+  max-width: 90px; /* Adjust the max-width as needed */
+  height: auto;
+}
+
+/* Main styles */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+
+#about {
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+}
+
+#work {
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#work .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#work .project {
+  width: calc(33% - 20px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#work .project img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#work .project h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+#work .project p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+#contact {
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#contact input[type="text"],
+#contact input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #c5c5c5;
+}
+
+/* Footer styles */
+
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+/*project links styling*/
+
+.project-link:hover {
+    background-color: #0056b3;
+}
+
+/*profile image stylinf*/
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+      
+    </header>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <img src="profile.jpeg" alt="Jackson" class="profile-image">
+        <p>Hello, I'm Jackson, a dedicated student currently pursuing a Bachelor of Science degree in Computer Science and Information Systems. I am actively seeking an internship opportunity to apply and enhance my knowledge in a real-world setting. With a strong passion for technology and its transformative potential, I am eager to contribute to a dynamic organization where I can learn from experienced professionals and gain hands-on experience in the field. Throughout my academic journey, I have developed a solid foundation in programming languages, data structures, algorithms, and database management, and I am eager to put these skills into practice.</p>
+        <p> </p>
+        <p>I am particularly interested in the intersection of computer science and information systems, and how technology can be leveraged to drive innovation and enhance organizational efficiency. I thrive in collaborative environments and approach challenges with a combination of critical thinking and creativity. As an intern, I am committed to continually learning and adapting to new technologies and industry trends. My goal is to contribute meaningfully to the success of the organization while growing both professionally and personally. I am excited about the opportunity to make a positive impact and shape the future of our digital landscape through an internship experience.</p>
+    </section>
+        <section id="work">
+          <h2>My Work</h2>
+          <div class="projects">
+              <div class="project">
+                  <img src="project1.jpeg" alt="Project 1">
+                  <h3>Online Marketplace</h3>
+                  <p>Online Marketplace: I created a dynamic online marketplace utilizing a modern tech stack. Leveraging my full-stack development skills, I developed an interactive platform that enables seamless transactions between buyers and sellers. The marketplace features advanced search, personalized recommendations, secure payment integration, and a user-friendly seller dashboard. With a responsive design and efficient database management, this project demonstrates my proficiency in HTML, CSS, JavaScript, Node.js, Express, MongoDB, and payment gateway integration.</p>
+                  <a href="project1-details.html" class="project-link">View Project</a>
+              </div>
+              <div class="project">
+                  <img src="project2.jpg" alt="Project 2">
+                  <h3>Recipe Sharing Application</h3>
+                  <p>Recipe Sharing Application: I designed and developed a recipe sharing application using a robust tech stack. Leveraging my full-stack development skills, I created a platform where users can discover, share, and explore a wide range of recipes. The application includes features such as user registration, recipe creation and editing, search functionality, and social interaction through comments and ratings. With a responsive design and efficient database management, this project showcases my expertise in HTML, CSS, JavaScript, Node.js, Express, MongoDB, and RESTful API integration.</p>
+                  <a href="project2-details.html" class="project-link">View Project</a>
+              </div>
+              <div class="project">
+                  <img src="project3.png" alt="Project 3">
+                  <h3>Weather Application</h3>
+                  <p>Weather Application: I built a sleek and intuitive weather application using a modern tech stack. Leveraging my front-end development skills, I designed an interactive interface that provides real-time weather information to users. The application utilizes APIs to fetch weather data based on user input or geolocation. It displays current weather conditions, hourly and daily forecasts, and additional details such as humidity, wind speed, and UV index. With a focus on responsive design and seamless user experience, this project demonstrates my proficiency in HTML, CSS, JavaScript, and API integration, specifically with weather APIs.</p>
+                  <a href="project3-details.html" class="project-link">View Project</a>
+              </div>
+          </div>
+      </section>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Jackson Khuto. All rights reserved.</p>
+    </footer>
+</body>
+</html>
