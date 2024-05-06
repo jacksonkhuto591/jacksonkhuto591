@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jackson Khuto - Portfolio</title>
+    <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        /* Global styles */
+     /* Global styles */
 
 * {
   box-sizing: border-box;
@@ -224,6 +225,129 @@ footer p {
     background-color: #007bff;
 }
 
+
+/* Responsive Styles */
+
+@media screen and (max-width: 600px)
+{
+  header {
+  padding: 10px;
+}
+
+header img {
+  max-width: 70px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+#about {
+  padding: 20px;
+  margin-top: 60px;
+}
+
+#work {
+  padding: 20px;
+}
+
+#work .project {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#work .project img {
+  width: 100%;
+  height: auto;
+}
+
+#work .project h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+#work .project p {
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+#contact {
+  padding: 20px;
+}
+
+#contact form {
+  align-items: flex-start;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+
+#contact input[type="submit"] {
+  padding: 8px;
+  font-size: 0.8rem;
+}
+
+/*message area*/
+#message-textarea {
+  height: 150px; /* Adjust the height as needed */
+}
+
+footer {
+  padding: 10px;
+}
+
+.project-link {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}
+
+#skills {
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.skill h3 {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.skill-bar {
+  height: 6px;
+}
+
+.skill-level {
+  height: 100%;
+}
+}
+
+/*social links styling*/
+.social-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Center the links horizontally */
+  align-items: center; /* Center the links vertically */
+ 
+}
+
+.social-links li {
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: inherit; /* Inherit footer text color */
+  text-decoration: none;
+}
+
+.social-links i {
+  font-size: 20px;
+}
     </style>
 </head>
 <body>
@@ -307,13 +431,19 @@ footer p {
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email"><br><br>
                 <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea><br><br>
+                <textarea id="message" name="message" rows="8"></textarea><br><br>
                 <input type="submit" value="Send">
             </form>
         </section>
     </main>
     <footer>
         <p>&copy; Jackson Khuto. All rights reserved.</p>
+        <ul class="social-links">
+          <li><a href="https://github.com/" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://twitter.com/?lang=en" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
     </footer>
 </body>
 </html>
